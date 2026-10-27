@@ -519,7 +519,7 @@ function unlockForm(){form.hidden=false;$("thanks").hidden=true}
    CONFIGURACIÓN: pega aquí la URL de tu Aplicación web de Apps Script
    (termina en /exec). Ver INSTRUCCIONES.md, paso 3.
    ====================================================================== */
-const API_URL = "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnTQR1X74F8PkvEPdss4lN8LVfrv50oOlpRJExnfTBpqbnO0U3nfpyAAA7Nz0pj6Y7nH4Xj5MkZiR6FoR2DOzK0yhxCy092B36kvtJDwxpf49bNXwJa2WQKPhTVj_VFRvNPF8Y6Gnt4PTxkrm_e51Q5tef5ZTMiKYySbmgyyNFPfjp_LpIKT4EfxLpqCJY-dk2NLsWAIURRJZTFxnWk-A1O4oOKwH51tBMkOaIwRgXhcwjPDMCLVUTQgr3ATeMW903x5fn9zFXA9zmuoTJC4sD6GCyc5fQ&lib=MX21XHy4OPW0mmMWvNoqqeUFhqcl7jYMK";
+const API_URL = "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnTQR1X74F8PkvEPdss4lN8LVfrv50oOlpRJExnfTBpqbnO0U3nfpyAAA7Nz0pj6Y7nH4Xj5MkZiR6FoR2DOzK0yhxCy092B36kvtJDwxpf49bNXwJa2WQKPhTVj_VFRvNPF8Y6Gnt4PTxkrm_e51Q5tef5ZTMiKYySbmgyyNFPfjp_LpIKT4EfxLpqCJY-dk2NLsWAIURRJZTFxnWk-A1O4oOKwH51tBMkOaIwRgXhcwjPDMCLVUTQgr3ATeMW903x5fn9zFXA9zmuoTJC4sD6GCyc5fQ&lib=MX21XHy4OPW0mmMWvNoqqeUFhqcl7jYMK/exec";
 const apiOK=/^https:\/\/script\.google(usercontent)?\.com\/.+/.test(API_URL);
 let adminPass="";try{adminPass=sessionStorage.getItem("pp-admin")||""}catch(e){}
 async function api(action,payload={}){
